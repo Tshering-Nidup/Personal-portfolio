@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
 *,
 *::after,
 *::before {
@@ -6,7 +9,9 @@
   padding: 0;
   line-height: 1.5;
 }
-
+body {
+  font-family: 'Poppins', sans-serif;
+}
 div#main-container {
   width: 100%;
   padding: 5px 15px 5px;
