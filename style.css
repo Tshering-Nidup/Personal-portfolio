@@ -65,10 +65,7 @@ footer {
 }
 
 /* Mobile display */
-@media screen and (max-width: 767px) {
-  body {
-    height: 100vh;
-  }
+@media screen and (max-width: 767px)
   /* Logo Container */
   div#logo-container {
     display: flex;
@@ -110,7 +107,7 @@ footer {
 
   footer {
     position: relative;
-    top: 100px;
+    top: 300px;
   }
 }
 
