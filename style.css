@@ -66,6 +66,9 @@ footer {
 
 /* Mobile display */
 @media screen and (max-width: 767px) {
+  body {
+    height: 100vh;
+  }
   /* Logo Container */
   div#logo-container {
     display: flex;
