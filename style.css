@@ -67,7 +67,7 @@ footer {
 /* Mobile display */
 @media screen and (max-width: 600px) {
   section {
-    margin-top: 5rem;
+    margin-top: 8rem;
   }
   /* Logo Container */
   div#logo-container {
@@ -111,7 +111,7 @@ footer {
   footer {
     padding: 10px;
     position: relative;
-    top: 300px;
+    top: 100px;
   }
 }
 
