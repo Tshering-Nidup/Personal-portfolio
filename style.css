@@ -17,9 +17,7 @@ div#main-container {
   padding: 5px 15px 5px;
   overflow: hidden;
 }
-div#links:hover {
-  color:#fff;
-}
+
 div#main-container #data h1 {
   font-size: 20px;
 }
