@@ -19,11 +19,11 @@ div#main-container {
 }
 
 div#main-container #data h1 {
-  font-size: 20px;
+  font-size: 16px;
 }
 
 div#main-container span {
-  font-size: 1.7rem;
+  font-size: 1rem;
   color: lightskyblue;
 }
 
@@ -67,7 +67,7 @@ footer {
 /* Mobile display */
 @media screen and (max-width: 600px) {
   section {
-    margin-top: 6rem;
+    margin-top: 4.5rem;
   }
   /* Logo Container */
   div#logo-container {
