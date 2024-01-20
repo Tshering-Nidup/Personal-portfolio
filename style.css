@@ -67,7 +67,7 @@ footer {
 /* Mobile display */
 @media screen and (max-width: 600px) {
   section {
-    margin-top: 8rem;
+    margin-top: 6rem;
   }
   /* Logo Container */
   div#logo-container {
