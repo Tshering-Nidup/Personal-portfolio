@@ -25,11 +25,13 @@ div#main-container #data h1 {
 div#main-container span {
   font-size: 1rem;
   font-weight: 900;
+  color: #004455;
+  transition: 1s;
 }
 
 div#main-container span:hover {
-  text-decoration: underline;
-}
+  color: darkgrey;
+ }
 
 div#main-container #links a i:hover {
   color: lightskyblue;
