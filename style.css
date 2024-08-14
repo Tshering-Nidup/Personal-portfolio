@@ -204,9 +204,18 @@ footer {
     padding: 10px;
   }
 
+  div#main-container span {
+    font-size: 20px;
+  }
+
   div#data {
     padding: 20px 100px 0px 0px;
   }
+
+  div#main-container #data h1 {
+    font-size: 35px;
+  }
+
   footer {
     position: relative;
     top: 47px;
