@@ -49,21 +49,19 @@ button a {
   text-transform: uppercase;
 }
 
-button a:hover {
-  color: #fff;
-}
 
 button:hover {
   background-color: #004455;
   color: #fff;
+  a {
+    color: #fff;
+  }
 }
 
 footer {
   background-color: lightblue;
   display: flex;
   justify-content: center;
-  /*     position: relative;
-    top: 35px; */
 }
 
 /* Mobile display */
