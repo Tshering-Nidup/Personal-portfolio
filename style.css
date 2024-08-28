@@ -22,6 +22,10 @@ div#main-container #data h1 {
   font-size: 16px;
 }
 
+div#main-container #data p {
+  text-align: justify;
+}
+
 div#main-container span {
   font-size: 1rem;
   font-weight: 900;
@@ -41,7 +45,7 @@ button {
   padding: 15px;
   margin-top: 30px;
   border-radius: 8px;
-  transition: 1s;
+  transition: 0.5s;
 }
 
 button a {
