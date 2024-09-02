@@ -5,9 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tshering's Personal Portfolio</title>
+
+    <!-- AOS link  -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Favicon link -->
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <link rel="stylesheet" href="style.css" />
     
+
+    <!-- Font Awesome link -->
     <script
       src="https://kit.fontawesome.com/a45fc4ef11.js"
       crossorigin="anonymous"
@@ -18,47 +25,47 @@
     <div id="main-container">
       <!-- Links and Icons -->
       <div id="logo-container">
-        <div id="logo">
+        <div id="logo" data-aos="slide-right" data-aos-duration="2000">
           <img src="images/logo2.png" />
         </div>
         <div id="links">
-          <a href="https://github.com/Tshering-Nidup"
+          <a href="https://github.com/Tshering-Nidup" data-aos="slide-down" data-aos-duration="3000"
             ><i class="fa-brands fa-github"></i
           ></a>
-          <a href="https://web.whatsapp.com/"
+          <a href="https://web.whatsapp.com/" data-aos="slide-down" data-aos-duration="3000"
             ><i class="fa-brands fa-whatsapp"></i
           ></a>
 <!--           <a href="https://web.telegram.org/a/"><i class="fa-brands fa-telegram"></i></a> -->
-          <a href="https://www.linkedin.com/in/tshering-nidup-317174218/"
+          <a href="https://www.linkedin.com/in/tshering-nidup-317174218/" data-aos="slide-down" data-aos-duration="3000"
             ><i class="fa-brands fa-linkedin"></i
             ></a>
-          <a href="mailto:https://mail.google.com/mail/u/0/?ogbl#inbox"
+          <a href="mailto:https://mail.google.com/mail/u/0/?ogbl#inbox" data-aos="slide-down" data-aos-duration="3000"
             ><i class="fa-regular fa-envelope"></i
           ></a>
-          <a href="tel:17991837"><i class="fa-solid fa-phone"></i></a>
+          <a href="tel:17991837"><i class="fa-solid fa-phone" data-aos="slide-down" data-aos-duration="3000"></i></a>
         </div>
       </div>
 
       <!-- Profile Images -->
       <!--    Data Scrtion      -->
       <section>
-        <div id="profile-image">
+        <div id="profile-image" data-aos="slide-up" data-aos-duration="3000">
           <img src="images/Profile rm.png" alt="Profile Image" />
         </div>
 
         <!-- Detail description -->
-        <div id="data">
-          <h1>Hi, I am Tshering Nidup, </h1>
-          <p>
+        <div id="data" >
+          <h1 data-aos="slide-left" data-aos-duration="3000">Hi, I am Tshering Nidup, </h1>
+          <p data-aos="slide-left" data-aos-duration="3000">
             I am a
             <span>Front-End Web Developer</span> || <span>ICT Trainer</span> || <span>Educator</span> ||
             <span>BSD Coding Instructor</span> with an experience of
             <span>3 years </span>in the field of teaching <span>ICT</span> and <span>Coding (HTML, CSS and JS)</span> ,and I love <span>learning and working with codes and Designs</span>
           </p>
-          <button>
+          <button data-aos="slide-up" data-aos-duration="3000">
             <a href="https://ceering-nidup-cv.netlify.app">Check Responsive C.V</a>
           </button>
-           <button>
+           <button data-aos="slide-up" data-aos-duration="3000">
             <a href="images/Tshering Nidup's CV.pdf">Download C.V</a>
           </button>
           
@@ -67,5 +74,12 @@
     </div>
 
     <footer>&copy;copyright 2023</footer>
+
+
+    <!--  JS AOS link  -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   </body>
 </html>
