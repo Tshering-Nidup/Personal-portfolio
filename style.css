@@ -13,9 +13,10 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 div#main-container {
-  width: 100%;
+  width: 90%;
   padding: 5px 15px 5px;
   overflow: hidden;
+  margin: 0 auto;
 }
 
 div#main-container #data h1 {
@@ -40,6 +41,31 @@ div#main-container span:hover {
 div#main-container #links a i:hover {
   color: lightskyblue;
 }
+
+/* Logo container */
+div#logo-container {
+  margin: 0px 20px;
+}
+
+
+/* Profile section */
+section {
+  margin: 20px auto;
+}
+
+/* Profile image */
+div#profile-image img {
+  width: 400px !important;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px grey;
+}
+
+div#data {
+  margin: 50px;
+}
+
 
 button {
   padding: 15px;
