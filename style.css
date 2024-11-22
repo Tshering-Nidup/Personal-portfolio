@@ -9,13 +9,14 @@
   padding: 0;
   line-height: 1.5;
 }
+
 body {
   font-family: 'Poppins', sans-serif;
 }
+
 div#main-container {
   width: 90%;
   padding: 5px 15px 5px;
-  overflow: hidden;
   margin: 0 auto;
 }
 
@@ -51,11 +52,14 @@ div#logo-container {
 /* Profile section */
 section {
   margin: 20px auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 /* Profile image */
 div#profile-image img {
-  width: 400px !important;
+  width: 400px;
   height: 400px;
   object-fit: cover;
   border-radius: 50%;
@@ -95,10 +99,11 @@ footer {
 }
 
 /* Mobile display */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 480px) {
   section {
     margin-top: 0.5rem;
   }
+
   /* Logo Container */
   div#logo-container {
     display: flex;
@@ -146,7 +151,8 @@ footer {
 }
 
 /* Medium devices / Tablets */
-@media only screen and (min-width: 601px) and (max-width: 768px) {
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  
   div#logo-container {
     display: flex;
     justify-content: center;
@@ -185,6 +191,10 @@ footer {
 
 /* Desktops and Laptops */
 @media only screen and (min-width: 769px) {
+  body {
+    overflow: hidden;
+  }
+
   div#main-container {
     display: flex;
     height: 90vh;
@@ -193,11 +203,10 @@ footer {
     display: flex;
     align-items: center;
   }
+
   div#logo-container {
     display: flex;
     flex-direction: column;
-    /* justify-content: center;
-    justify-content: space-between; */
     align-items: center;
     height: 60px;
   }
@@ -211,12 +220,6 @@ footer {
     justify-content: center;
     width: 100%;
     padding-bottom: 50px;
-  }
-
-  div#profile-image img {
-    width: 100%;
-    display: block;
-    margin: 0 auto;
   }
 
   /*   Links   */
