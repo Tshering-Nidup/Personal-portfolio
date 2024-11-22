@@ -227,7 +227,7 @@ footer {
 }
 
 /* Desktops and Laptops */
-@media only screen and (min-width: 769px) {
+@media (min-width: 769px) and (max-width: 1000px) {
   div#main-container {
     width: 100%;
   }
