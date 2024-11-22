@@ -100,6 +100,12 @@ footer {
 
 /* Mobile display */
 @media screen and (max-width: 480px) {
+
+  /* main container */
+  div#main-container {
+    overflow: hidden;
+  }
+
   section {
     margin-top: 0.5rem;
     display: flex;
