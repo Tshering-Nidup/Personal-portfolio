@@ -154,16 +154,13 @@ footer {
 
   div#summary {
     width: 90%;
+    margin: 10px 50px;
   }
 
 
   button {
     padding: 5px;
 
-  }
-
-  footer {
-    padding: 10px;
   }
 }
 
@@ -200,9 +197,32 @@ footer {
     color: #000;
     padding: 10px;
   }
-  footer {
-    position: relative;
-    top: 37px;
+
+  /* Summary Section */
+  section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    align-items: center;
+  }
+
+  section div#profile-image{
+    width: 40%;
+  }
+
+  section div#profile-image img {
+    width: 250px;
+    height: 250px;
+  }
+  section div#summary{
+    width: 60%;
+
+  }
+
+  button {
+    padding: 5px;
+    font-size: 10px;
   }
 }
 
