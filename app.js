@@ -7,7 +7,7 @@
 
 
 // Name typing intro
-const text = "Welcome to Tshering's Portfolio 😁";
+const text = "Welcome! To Tshering's Portfolio";
 const typingSpeed = 100; // Adjust typing speed (ms)
 
 let i = 0;
