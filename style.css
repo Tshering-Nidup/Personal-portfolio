@@ -102,17 +102,13 @@ div#summary div.typewriter span h1 {
   }
 }
 
-/* div#summary > h1 span {
-  font-size: 4rem;
-  font-family: var(--nameFont);
-} */
-
 
 button {
   padding: 15px;
   margin-top: 30px;
   border-radius: 8px;
   transition: 0.5s;
+  font-size: 0.7rem;
 }
 
 button a {
@@ -197,6 +193,7 @@ footer {
 
   button {
     padding: 5px;
+    font-size: 0.5rem;
 
   }
 }
