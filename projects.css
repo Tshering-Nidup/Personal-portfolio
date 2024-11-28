@@ -1,0 +1,110 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* main Section */
+section#mainSection {
+    outline: 1px solid black;
+    width: 90%;
+    margin: 4rem auto;
+    display: flex;
+    height: 80vh;
+}
+
+
+/* Inner section */
+section#leftSection, section#rightSection {
+    margin: 0.7rem;
+    outline: 1px solid black;
+}
+
+section#leftSection {
+    width: 80%;
+}
+
+section#rightSection {
+    width: 20%;
+}
+
+/* Inner upper section */
+section#upperSection {
+    margin: 0.5rem;
+    outline: 1px solid black;
+    height: 25vh;
+}
+
+section#upperSection img {
+    margin: 0.5rem;
+}
+
+section#upperSection img:nth-child(1) {
+    width: 10rem;
+    height: 95%;
+}
+section#upperSection img:nth-child(2) {
+    width: 30rem;
+    height: 95%;
+}
+section#upperSection img:nth-child(3) {
+    width: 22.3rem;
+    height: 95%;
+}
+
+/* Inner bottom section */
+section#bottomSection {
+    margin: 0.5rem;
+    outline: 1px solid black;
+    height: 48vh;
+    display: flex;
+}
+
+section#bottomInnerLeft, section#bottomInnerRight {
+    outline: 1px solid black;
+    margin: 0.5rem;
+}
+
+/* Bottom inner Left section */
+section#bottomInnerLeft {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+section#bottomInnerLeft img {
+    outline: 1px solid black;
+    margin: 0.5rem;
+}
+
+section#bottomInnerLeft img:nth-child(1) {
+    height: 25vh;
+}
+
+section#bottomInnerLeft img:nth-child(2) {
+    height: 17vh;
+}
+
+/* Bottom inner right section */
+section#bottomInnerRight {
+    width: 60%;
+}
+
+
+/* outer right section */
+section#rightSection {
+    display: flex;
+    flex-direction: column;
+}
+
+section#rightSection img {
+    outline: 1px solid black;
+    margin: 0.5rem;
+}
+
+section#rightSection img:nth-child(1) {
+    height: 15rem;
+}
+section#rightSection img:nth-child(2) {
+    height: 19rem;
+}
