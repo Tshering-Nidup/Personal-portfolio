@@ -78,10 +78,34 @@ div#summary {
   margin: 50px;
 }
 
-div#summary > h1 span {
+div#summary div.typewriter span h1 {
+  font-family: var(--nameFont);
+  font-size: 2rem;
+}
+
+
+#typewriter-text {
+  font-size: 1.5em;
+  color: #333;
+}
+
+.typewriter.animate {
+  animation: blinkCursor 0.75s step-end infinite;
+}
+
+@keyframes blinkCursor {
+  from {
+      border-right-color: black;
+  }
+  to {
+      border-right-color: transparent;
+  }
+}
+
+/* div#summary > h1 span {
   font-size: 4rem;
   font-family: var(--nameFont);
-}
+} */
 
 
 button {
