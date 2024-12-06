@@ -20,6 +20,10 @@ section#mainSection {
     align-items: center;
 }
 
+section a img {
+    transition: 1s;
+}
+
 
 /* leftSection */
 section#leftSection {
@@ -93,4 +97,9 @@ section#rightSection a img {
     height: 20rem;
     object-fit: cover;
     margin: 5px;
+}
+
+/* All Projects hover effect */
+section a img:hover {
+    transform: scale(0.8);
 }
