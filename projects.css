@@ -3,119 +3,94 @@
     padding: 0;
     margin: 0;
 }
-
-section img {
-    width: 80%;
-    object-fit: contain;
-    object-position: center;
-    box-shadow: 0px 0px 5px grey;
+body {
+    overflow: hidden;
 }
 
-/* main Section */
+img {
+    width: 18rem;
+    box-shadow: 0px 0px 2px grey;
+}
+
+/* Main Section */
 section#mainSection {
-    width: 95%;
-    margin: 2rem auto;
+    margin: 10px;
     display: flex;
-    height: 90vh;
+    justify-content: center;
     align-items: center;
 }
 
 
-/* Inner section */
-section#leftSection, section#rightSection {
-    margin: 0.7rem;
-}
-
+/* leftSection */
 section#leftSection {
-    width: 80%;
-    text-align: center;
-    margin: 0.5rem auto;
-    gap: 10;
+    width: 60%;
 }
 
-section#rightSection {
-    width: 20%;
-    text-align: center;
-    margin: 0 auto;
-}
-
-/* Inner upper section */
+/* Two sections of  Left Section */
+/* upperSection */
 section#upperSection {
-    margin: 0.5rem;
-}
-
-section#upperSection img {
-    margin: 0.5rem;
-}
-
-section#upperSection img:nth-child(1) {
-    width: 13rem;
-    height: 12rem;;
-}
-section#upperSection img:nth-child(2) {
-    width: 30rem;
-    height: 12rem;
-}
-section#upperSection img:nth-child(3) {
-    width: 22.3rem;
-    height: 12rem;
-}
-
-/* Inner bottom section */
-section#bottomSection {
-    margin: 0.5rem;
-    height: 50vh;
     display: flex;
-    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
-section#bottomInnerLeft, section#bottomInnerRight {
-    margin: 0.5rem;
+section#upperSection a img {
+    height: 18rem;
+    width: 18rem;
+    object-fit: contain;
+    margin: 5px;
 }
 
-/* Bottom inner Left section */
+/* bottomSection */
+section#bottomSection {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Bottom inner left */
 section#bottomInnerLeft {
-    width: 70%;
+    width: 60%;
+    margin: 10px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-section#bottomInnerLeft img {
-    margin: 0.5rem;
-    text-align: center;
-    margin: 5px auto;
+section#bottomInnerLeft a img {
+    width: 34.5rem;
+    height: 10rem;
+    margin: 5px;
+    object-fit: contain;
 }
 
-section#bottomInnerLeft img:nth-child(1) {
-    height: 25vh;
-    width: fit-content;
+section#bottomInnerLeft a img:nth-child(1) {
+    object-fit: cover;
+    object-position: center;
 }
 
-section#bottomInnerLeft img:nth-child(2) {
-    height: 17vh;
-}
 
-/* Bottom inner right section */
+/* Bottom inner Right */
 section#bottomInnerRight {
-    width: 30%;
-    text-align: center;
-}
-section#bottomInnerRight img {
-    width: 90%;
+    margin: 20px;
+    width: 40%;
 }
 
 /* outer right section */
 section#rightSection {
+    width: 40%;
     display: flex;
     flex-direction: column;
-    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
 }
 
-section#rightSection img {
-    margin: 0.5rem;
-    width: 17rem;
-    height: 17rem;
-    text-align: center;
+section#rightSection a img {
+    width: 38rem;
+    height: 20rem;
     object-fit: cover;
+    margin: 5px;
 }
-
