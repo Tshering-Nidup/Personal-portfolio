@@ -3,104 +3,194 @@
     padding: 0;
     margin: 0;
 }
+
 body {
-    overflow: hidden;
+    overflow-x: hidden; /* Allow vertical scroll, prevent horizontal */
+    font-family: sans-serif; /* Basic font consistency */
 }
 
 img {
-    width: 18rem;
+    max-width: 100%; /* Ensure images scale down */
+    height: auto; /* Maintain aspect ratio */
     box-shadow: 0px 0px 2px grey;
+    display: block; /* Remove extra space below images */
 }
 
 /* Main Section */
 section#mainSection {
     margin: 10px;
     display: flex;
-    justify-content: center;
+    flex-direction: column; /* Stack sections vertically by default */
     align-items: center;
+    width: 100%;
+    padding: 10px;
 }
 
 section a img {
-    transition: 1s;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smoother transition */
+    margin: 10px 0; /* Add some vertical spacing */
 }
-
 
 /* leftSection */
 section#leftSection {
-    width: 60%;
-}
-
-/* Two sections of  Left Section */
-/* upperSection */
-section#upperSection {
+    width: 100%; /* Full width on small screens */
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
 }
 
-section#upperSection a img {
-    height: 18rem;
-    width: 18rem;
-    object-fit: contain;
+/* upperSection */
+section#upperSection {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap */
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+section#upperSection a {
     margin: 5px;
+    flex: 1 1 200px; /* Flex grow, shrink, basis - items can grow and shrink, base width 200px */
+    max-width: calc(33.333% - 10px); /* Max 3 items per row on larger screens, considering margin */
+}
+
+section#upperSection a img {
+    width: 100%; /* Make images fill their container */
+    height: auto;
+    aspect-ratio: 1 / 1; /* Maintain square aspect ratio for these images */
+    object-fit: cover; /* Cover the area, cropping if necessary */
 }
 
 /* bottomSection */
 section#bottomSection {
-    margin: 10px;
+    margin-top: 20px;
     display: flex;
-    justify-content: center;
+    flex-direction: column; /* Stack vertically on small screens */
     align-items: center;
+    width: 100%;
 }
 
 /* Bottom inner left */
 section#bottomInnerLeft {
-    width: 60%;
-    margin: 10px;
+    width: 100%;
+    margin: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
+section#bottomInnerLeft a {
+    width: 100%;
+    margin: 5px 0;
+}
+
 section#bottomInnerLeft a img {
-    width: 34.5rem;
-    height: 10rem;
-    margin: 5px;
-    object-fit: contain;
+    width: 100%;
+    height: auto;
+    /* Consider a fixed aspect ratio or let it be natural */
 }
-
-section#bottomInnerLeft a img:nth-child(1) {
-    object-fit: cover;
-    object-position: center;
-}
-
 
 /* Bottom inner Right */
 section#bottomInnerRight {
-    margin: 20px;
-    width: 40%;
+    margin: 10px 0;
+    width: 100%;
+    display: flex; /* Ensure it behaves like a flex item if wrapped */
+    justify-content: center;
+}
+
+section#bottomInnerRight a {
+     width: 100%;
+     max-width: 400px; /* Limit size of this image */
+}
+
+section#bottomInnerRight a img {
+    width: 100%;
+    height: auto;
 }
 
 /* outer right section */
 section#rightSection {
-    width: 40%;
+    width: 100%; /* Full width on small screens */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 10px;
+    margin-top: 20px;
+}
+
+section#rightSection a {
+    width: 100%;
+    margin: 5px 0;
+    max-width: 600px; /* Limit size of these images */
 }
 
 section#rightSection a img {
-    width: 38rem;
-    height: 20rem;
-    object-fit: cover;
-    margin: 5px;
+    width: 100%;
+    height: auto;
+    /* object-fit: cover; */ /* Reconsider if aspect ratio is an issue */
 }
 
 /* All Projects hover effect */
 section a img:hover {
-    transform: scale(0.8);
-    box-shadow: 0px 0px 20px grey;
+    transform: scale(0.95); /* Slightly less aggressive scaling */
+    box-shadow: 0px 0px 15px dodgerblue; /* Brighter shadow on hover */
+}
+
+/* Medium screens (e.g., tablets) */
+@media (min-width: 600px) {
+    section#mainSection {
+        flex-direction: row; /* Side-by-side layout for left and right sections */
+        align-items: flex-start; /* Align items to the top */
+    }
+
+    section#leftSection {
+        width: 60%;
+        margin-right: 20px; /* Space between left and right */
+    }
+
+    section#rightSection {
+        width: 40%;
+        margin-top: 0; /* Reset margin top */
+    }
+
+    section#upperSection a {
+        /* max-width: calc(33.333% - 10px); Maintain 3 per row if space */
+    }
+
+    section#bottomSection {
+        flex-direction: row; /* Side-by-side for inner left and inner right */
+        align-items: flex-start;
+    }
+
+    section#bottomInnerLeft {
+        width: 60%;
+        margin-right: 10px;
+    }
+
+    section#bottomInnerRight {
+        width: 40%;
+        margin: 0; /* Reset margin */
+        align-self: stretch; /* Make it take full height of the flex container if needed */
+    }
+    section#bottomInnerRight a img{
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+/* Large screens (e.g., desktops) */
+@media (min-width: 900px) {
+    section#upperSection a {
+         max-width: calc(33.333% - 10px); /* Ensure 3 items per row */
+    }
+     section#bottomInnerLeft a img {
+        height: 150px; /* Example fixed height for these images on large screens */
+        object-fit: cover;
+    }
+
+    section#rightSection a img {
+        max-height: 250px; /* Example max height for these images */
+        object-fit: cover;
+    }
 }
