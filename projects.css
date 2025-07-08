@@ -51,7 +51,7 @@ section#upperSection {
 section#upperSection a {
     margin: 5px;
     flex: 1 1 200px; /* Flex grow, shrink, basis - items can grow and shrink, base width 200px */
-    max-width: calc(33.333% - 10px); /* Max 3 items per row on larger screens, considering margin */
+    /* max-width: calc(33.333% - 10px); Removed from here, will be applied in media query */
 }
 
 section#upperSection a img {
@@ -155,7 +155,7 @@ section a img:hover {
     }
 
     section#upperSection a {
-        /* max-width: calc(33.333% - 10px); Maintain 3 per row if space */
+        max-width: calc(50% - 10px); /* Max 2 items per row on medium screens */
     }
 
     section#bottomSection {
@@ -183,6 +183,11 @@ section a img:hover {
 @media (min-width: 900px) {
     section#upperSection a {
          max-width: calc(33.333% - 10px); /* Ensure 3 items per row */
+    }
+
+    section#bottomInnerLeft {
+        /* Ensure it doesn't shrink if content is smaller than its flex-basis if bottomInnerRight is very tall */
+        min-height: 1px; /* Or some other appropriate value if needed, often helps flex sizing */
     }
      section#bottomInnerLeft a img {
         height: 150px; /* Example fixed height for these images on large screens */
