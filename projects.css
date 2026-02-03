@@ -4,7 +4,7 @@
     margin: 0;
 }
 body {
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 img {
@@ -39,8 +39,9 @@ section#upperSection {
 }
 
 section#upperSection a img {
-    height: 18rem;
-    width: 18rem;
+    width: 100%;
+    max-width: 18rem;
+    height: auto;
     object-fit: contain;
     margin: 5px;
 }
@@ -64,8 +65,9 @@ section#bottomInnerLeft {
 }
 
 section#bottomInnerLeft a img {
-    width: 34.5rem;
-    height: 10rem;
+    width: 100%;
+    max-width: 34.5rem;
+    height: auto;
     margin: 5px;
     object-fit: contain;
 }
@@ -93,8 +95,9 @@ section#rightSection {
 }
 
 section#rightSection a img {
-    width: 38rem;
-    height: 20rem;
+    width: 100%;
+    max-width: 38rem;
+    height: auto;
     object-fit: cover;
     margin: 5px;
 }
@@ -103,4 +106,45 @@ section#rightSection a img {
 section a img:hover {
     transform: scale(0.8);
     box-shadow: 0px 0px 20px grey;
+}
+
+/* Integrated codes from Codex */
+@media (max-width: 1024px) {
+    section#mainSection {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    section#leftSection, section#rightSection {
+        width: 100%;
+    }
+
+    section#bottomSection {
+        flex-direction: column;
+    }
+    section#bottomInnerLeft, section#bottomInnerRight {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    section#bottomInnerLeft a img, section#rightSection a img, section#upperSection a img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+
+/* End of Integrated codes from Codex */
+@media (max-width:600px) {
+    section#mainSection {
+        margin: 10px 5px;
+    }
+
+    section#upperSection {
+        flex-direction: column;
+    }
+
+    section#bottomInnerleft a img, section#bottomInnerRight a img,  section#rightSection a img, section#upperSection a img {
+        max-width: 100%;
+    }
 }
