@@ -189,11 +189,13 @@ footer {
     width: 90%;
     margin: 10px 50px;
   }
-
+  div#summary div.typewriter span h1 {
+    font-size: 1.2rem;
+  }
 
   button {
     padding: 5px;
-    font-size: 0.5rem;
+    font-size: 0.6rem;
 
   }
 }
