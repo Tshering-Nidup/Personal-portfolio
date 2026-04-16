@@ -122,8 +122,8 @@ section a img:hover {
         flex-direction: column;
     }
     section#bottomInnerLeft, section#bottomInnerRight {
-        width: 100%;
-        margin: 10px 0;
+        width: fit-content;
+        margin: 10px auto;
     }
 
     section#bottomInnerLeft a img, section#rightSection a img, section#upperSection a img {
