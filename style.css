@@ -137,6 +137,7 @@ footer {
   /* main container */
   div#main-container {
     overflow: hidden;
+    width: 100%;
   }
 
   section {
